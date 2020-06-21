@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep  5 23:23:40 2019
-
-@author: shailesh
-"""
 import numpy as np
 import random as random
 
