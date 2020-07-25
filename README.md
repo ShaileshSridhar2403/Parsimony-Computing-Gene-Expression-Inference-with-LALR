@@ -15,8 +15,6 @@ After downloading, exectute parsimoniousDataGeneration.py to split the data into
 
 ## Execution instructions
 
-The main code provided in the repo is for running with the entire dataset and not the subsamples, but this modification can be made easily.
-
 Use the command
 
 python D-Gex_colab.py
