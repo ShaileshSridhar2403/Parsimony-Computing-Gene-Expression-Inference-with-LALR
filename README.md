@@ -9,7 +9,7 @@ Link to paper: https://arxiv.org/abs/2005.08442
 
 ## Dataset
 
-The dataset used belong to the Gene Expression Omnibus and is quite large.If you would like access to the preprocessed data, please send a mail to shailesh.sridhar@gmail.com.
+The dataset used belongs to the Gene Expression Omnibus and is quite large.If you would like access to the preprocessed data, please send a mail to shailesh.sridhar@gmail.com.
 
 After downloading, exectute parsimoniousDataGeneration.py to split the data into random subsamples as described in the paper.
 
