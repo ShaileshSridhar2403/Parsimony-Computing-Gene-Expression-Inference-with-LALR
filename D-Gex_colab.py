@@ -7,7 +7,7 @@ import sys
 import time
 
 import copy
-import lipschitz_lr
+from lipschitz_lr import lipschitz_lr_calc,adjustLearningRate
 
 globalPenulti = 10**18 #Arbitrary large integer. Not set to 0 because 1/Kz will tend to inf
 globalUlti = 10**18
@@ -83,7 +83,7 @@ def train(model,optimizer,steps,nRows,activationFunc,verbose=True,bsize=200,epoc
 	yTrainCost = norm(X_train)
 	predictedLR=0
 	for epoch in range(epochs):
-		
+		#call lipschitz_lr_calc followed by adjustLearningRate here
 		print('curren LR',optimizer.param_groups[0]['lr'])
 		for step in range(steps):
 			x,y = getbatch(bsize)
@@ -134,7 +134,6 @@ finMAEVals = []
 actFuncList = [ARELU,torch.tanh,torch.relu,torch.sigmoid]
 #actFuncList = [leakyARELU]
 funcStrList = ['ARELU','tanh','relu','sigmoid']
-
 
 
 
